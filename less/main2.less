@@ -1,0 +1,512 @@
+@font-face {
+    font-family: 'Grenale2W03-NmlBd';
+    src: url('fonts/Grenale2W03-NmlBd.woff2') format('woff2'),
+        url('fonts/Grenale2W03-NmlBd.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grenale Slab Norm';
+    src: url('fonts/GrnD-NorReg.woff2') format('woff2'),
+        url('fonts/GrnD-NorReg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+rs-layer#slider-4-slide-8-layer-3 {
+    width: max-content!important;
+}
+
+body{
+    &.page-template-acerca, &.page-template-producto, &.page-template-inicio{
+.row {
+    
+    display: inherit;
+}
+    }
+}
+/* Ajustes generales de la plantilla */
+.whb-scroll-stick .woodmart-logo img {  
+ transform: scale(1.4) translateY(0px);
+}
+.main-page-wrapper {
+    
+    padding-top: 0px;
+}
+@import "vars";
+
+
+
+/*Ajuste de FullWidth*/
+
+.page-template {
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+   a.woodmart-nav-link {
+    font-family: 'Grenale Slab Norm'!important;
+    font-size: 16px!important;
+    color: #1b1b1b!important;
+       
+       
+}
+
+
+/*Esquema por defecto para las secciones*/
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+        width: 50%;
+    }
+    .col2 {
+            width: 33.33%;
+    }
+}
+.product-tabs-wrapper {
+    display: none;
+}
+
+
+/*Ajuste general*/
+ol {
+    list-style: decimal;
+}
+.banner{
+    span.texto {
+    /* margin-top: 31px; */
+    position: relative;
+    top: 3px;
+    left: 7px;
+}
+}
+.template-section {
+  
+        padding: 50px 0;
+    
+
+    .contenedor {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col {
+       min-height: 0px;
+    display: block;
+    margin: auto;
+        padding: 60px;
+    }
+    .col2 {
+        min-height: 0px;
+    display: block;
+    margin: auto;
+        padding: 50px;
+    }
+    
+    h1 {
+            color: #43c410;
+    font-family: 'Grenale2W03-NmlBd';
+    font-weight: normal;
+    font-size: 80px;
+    text-shadow: -2px 2px rgba(0,0,0,0.3);
+        span {
+            font-weight: 500;
+        }
+       
+        
+    }
+
+    h2 {
+        color: @verdeoscuro;
+          font-family: 'Grenale2W03-NmlBd';
+        font-size: 60px;
+        line-height: 1.3em;
+        text-align: center;
+        span{
+            display: block;
+        }
+        &.blanco{
+            color: white;
+                line-height: 40px;
+            line-height: 40px!important;
+        }
+        &.claro{
+            color: @verde;
+        }
+        
+
+    }
+    h3 {
+        color: @verdeoscuro;
+       font-family: 'Grenale2W03-NmlBd';
+         font-size: 50px;
+        &.blanco{
+            color: white;
+            font-size: 40px;
+        }
+        &.especial {
+             font-family: 'Grenale Slab Norm';
+            color: @negro;
+        }
+    }
+    a,p,
+    ul {
+        color: @negro;
+         font-size: 20px;
+        font-family: 'Grenale Slab Norm';
+        &.blanco{
+            color: white;
+        }
+        
+        b{
+             font-family: 'Grenale2W03-NmlBd';
+            color: @verde;
+        }
+        &.especial {
+            font-size: 15px;
+            color: white;
+        }
+    }
+
+    ul {
+       
+        
+        li {
+           
+            color: @negro;
+            font-family: 'Grenale Slab Norm';
+            position: relative;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            &::before {
+               
+  content: "•";
+  color: @verde;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+            }
+        }
+
+  
+    }
+    
+
+
+
+
+  
+
+    .btn {
+        transition: all 0.3s ease-in-out;
+          font-family: 'Grenale2W03-NmlBd';
+            text-transform: none;
+             font-size: 28px;
+     //    -webkit-border-radius: 10px;
+  //-moz-border-radius: 10px;
+ border-radius: 0px;
+        border: 5px solid @verde;
+            background: transparent;
+            color: @negro2;
+            &:hover {
+                background: @verde;
+                color: white;
+               
+            }
+        
+    }
+    .center {
+           text-align: center!important;
+    }
+}
+
+
+.slider {
+    .center {
+            text-align: center!important;
+    line-height: 0px!important;
+    z-index: 1!important;
+    position: relative;
+    top: -17px;
+    left: 70px;
+    }
+    .fondoverde {
+    margin-top: 10px;
+    background-color: rgba(2, 169, 79, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+    p{
+        font-size: 20px;
+        display: block;
+        margin: auto;
+    }
+    }
+        .btn2 {
+        transition: all 0.3s ease-in-out;
+          font-family: 'Grenale2W03-NmlBd';
+            text-transform: none;
+             font-size: 28px;
+         -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+border-radius: 0px!important;
+                padding: 10px;
+           
+      //  border: 1px solid @verdeclaro;
+            background: white;
+            color: @verdeoscuro;
+            &:hover {
+                background: @verdeoscuro;
+                color: white;
+               
+            }
+        
+    }
+
+}
+#fabricamos {
+    h3 {
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin: auto;
+    }
+    .center{
+            margin-top: 50px;
+    }
+}
+#productos{
+    background-color: @gris;
+}
+#beneficio{
+     background: url(../img/beneficio.jpg) center no-repeat;
+    background-size: cover;
+    height: 650px;
+    img{
+             position: relative;
+    top: 4px;
+    right: 152px;
+    }
+    .ban {
+        background-color: @verde;
+            padding: 40px;
+         box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    ul{
+        li{
+            color: white;
+        }
+    }
+    h3 {
+         font-family: 'Grenale Slab Norm';
+        font-size: 30px;
+    }
+}
+#optimo{
+    padding: 100px 0;
+}
+#elegir{
+    background-color: @verde;
+    img {
+        display: block;
+    margin: auto;
+    }
+    p{
+        margin-top: 30px;
+        text-align: center;
+        
+    }
+    
+}
+#certificado{
+     hr{
+            width: auto;
+    border-top: 3px solid rgba(191,191,191,1);
+    margin-top: 100px;
+    margin-bottom: 50px;
+         &.certificado{
+              margin-top: 150px;
+    margin-bottom: 50px;
+         }
+        
+    }
+    h2{
+        margin-bottom: 30px;
+    }
+     img {
+        display: block;
+    margin: auto;
+    }
+    .col2 {
+    padding: 0px;
+    }
+    
+}
+#contacto{
+    .btn {
+        transition: all 0.3s ease-in-out;
+          font-family: 'Grenale2W03-NmlBd';
+            text-transform: none;
+             font-size: 28px;
+     //    -webkit-border-radius: 10px;
+  //-moz-border-radius: 10px;
+ border-radius: 0px;
+        border: none;
+            background: @verdeoscuro;
+            color: white;
+            &:hover {
+               border: 5px solid @verde;
+            background: transparent;
+            color: @negro2;
+               
+            }
+        
+    }
+      .caldera-grid .form-control {
+    
+    background-color: @grisfondo;
+    border: px solid @griscontacto;
+        color: @griscontacto;
+      font-size: 20px;
+    font-family: 'Grenale Slab Norm';
+}
+     .caldera-grid .form-control::placeholder, .caldera-grid .form-control, label  { 
+        color: @griscontacto;
+        font-size: 20px;
+   font-family: 'Grenale Slab Norm';
+       
+    }
+     h3 {
+        text-align: center;
+    }
+    img {
+        &.logo{
+        display: block;
+        margin: auto;
+        }
+        &.so{
+            margin-right: 20px;
+        }
+    }
+    p{
+        &.negritas{
+            font-family: 'Grenale2W03-NmlBd';
+            color: @verdeoscuro;
+        }
+    }
+    #fld_4405579_1-wrap {
+    float: right;
+}
+}
+.woodmart-prefooter {
+    display: none;
+}
+#esbrillante{
+    padding: 20px 0;
+    background-color: @verde;
+    color: @verdeoscuro;
+    a{
+        font-family: 'Grenale2W03-NmlBd';
+    }
+}
+/**ACERCA**/
+
+#fabricamos2 {
+    h3 {
+        text-align: center;
+            font-size: 34px;
+    }
+    img {
+        display: block;
+        margin: auto;
+    }
+    .center{
+            margin-top: 50px;
+    }
+}
+#objetivo{
+    background-color: @verdeoscuro;
+    p{
+        text-align: center;
+        span{
+            font-family: 'Grenale2W03-NmlBd';
+            color: blanco;
+        }
+    }
+}
+#mision{
+     hr{
+            width: auto;
+    border-top: 3px solid rgba(191,191,191,1);
+    margin-top: 100px;
+    margin-bottom: 50px;
+    }
+    span{
+        color: @verde;
+    }
+    h3{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin: auto;
+    }
+}
+#fabricamos3 {
+    h3 {
+       font-size: 30px;
+    }
+    img {
+        display: block;
+        margin: auto;
+    }
+    .center{
+            margin-top: 50px;
+    }
+}
+#especificaciones{
+    td{
+            border-bottom: none;
+        font-family: 'Grenale Slab Norm';
+         font-size: 20px;
+        
+    }
+    tr:nth-child(odd) {
+        background-color:@gristabla;
+    
+}
+tr:nth-child(even) {
+    background-color:white;
+}
+    th{
+            font-family: 'Grenale2W03-NmlBd';
+    font-size: 25px;
+        color: white;
+        background-color: @verdeoscuro;
+    }
+    .ban{
+        background-color: @verde;
+    }
+    span{
+        display: block;
+    }
+    h3{
+            padding: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+@import "responsive";
