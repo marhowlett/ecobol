@@ -68,7 +68,7 @@
            <div class="col">
            <p>Con nuestro servicio de estampado (bordado, serigrafía o transfer) plasmamos la imagen de su negocio en nuestros productos y contribuimos al posicionamiento de su marca, ofreciéndole un contener su producto con estética, ecología y funcionalidad.</p>
            <div class="center">
-            <a href="#"  class="btn"> ME INTERESA</a>
+            <a href="https://ecobol.mx/#contacto"  class="btn"> ME INTERESA</a>
             </div>
            </div>
            <div class="col"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/aprovecha.png" alt="Logo">
@@ -78,7 +78,7 @@
        <h3 class="es2">¿No encuentra el empaque que necesita?</h3>
        <p class="ecobol">En Ecobol solucionamos problemas de empaque ofreciéndole un equipo especializado para brindarle asesoría de diseño e innovanción en la creación de cualquier bolsa o caja, en tela, papel o cartón de la mejor calidad según las necesidades de su producto.</p>
        <div class="center">
-       <p class="negrita ecobol">Para más detalles     <a href="#"  class="btn"> ¡CONTÁCTENOS!</a> </p>
+       <p class="negrita ecobol">Para más detalles     <a href="https://ecobol.mx/#contacto"  class="btn"> ¡CONTÁCTENOS!</a> </p>
        </div>
     </div>
 </section>

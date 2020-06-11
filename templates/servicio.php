@@ -81,7 +81,7 @@ Si necesita algún tamaño o diseño en especial, le ayudaremos a crear una bols
                      <p class="negrita">*En caso de modificación posterior a la autorización, aplicarán costos extras.</p>
                      <div class="center">
                          <h3 class="espe">Para más detalles</h3>
-                         <a href="#"  class="btn"> CONTÁCTANOS</a>
+                         <a href="https://ecobol.mx/#contacto"  class="btn"> CONTÁCTANOS</a>
                      </div>
                  </div>
                  <div class="col"><img class="bolsa" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ecobol.png" alt="Logo"></div>

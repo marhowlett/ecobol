@@ -2,6 +2,9 @@
     /* Template Name: Inicio */ 
     get_header();
 ?>
+<section id="slider" class="template-section">
+<?php echo do_shortcode('[rev_slider alias="slider-1"]'); ?>
+</section>
 <section id="somos" class="template-section">
        <div class="contenedor">
        <div class="grid">
@@ -43,7 +46,7 @@
     </div>
 </div>
 <div class="center">
-<a href="/catalogo"  class="btn"> <span>VER CATÁLOGO COMPLETO</span></a>
+<a href="#"  class="btn"> <span>VER CATÁLOGO COMPLETO</span></a>
 </div>
 </div>
 </section>
@@ -57,7 +60,7 @@
 PUBLICITARIO</span></h2>
       <p>Con nuestro servicio de estampado (bordado, serigrafía o transfer) plasmamos la imagen de su negocio en nuestros productos y contribuimos al posicionamiento de su marca, ofreciéndole un contener su producto con estética, ecología y funcionalidad.</p>
   <div class="center">
-<a href="#"  class="btn"> <span>SABER MÁS</span></a>
+<a href="https://ecobol.mx/servicios/"  class="btn"> <span>SABER MÁS</span></a>
 </div>
   </div>
    </div>
@@ -94,7 +97,7 @@ PUBLICITARIO</span></h2>
     </div>
      
            <div class="grid">
-               <div class="col"><?php echo do_shortcode('[caldera_form id="CF5ecd5755c48e4"]'); ?></div>
+               <div class="col"><?php echo do_shortcode('[caldera_form id="CF5e14ef6d8486d"]'); ?></div>
                
 <div class="col datos">
        
@@ -104,25 +107,29 @@ PUBLICITARIO</span></h2>
         
         </div>
         <div class="datos">
-       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/phone.png" alt="Logo">  <a href="https://wa.me/523316030969">33 160 309 69</a></p>
+       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/phone.png" alt="Logo"> (777) 100 1505<span>
+(777) 244 7159</span><span>
+EXT. 101</span>
+</p>
         
         </div>
         <div class="datos">
-       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/WA.png" alt="Logo">  <a href="https://wa.me/523316030969">33 160 309 69</a></p>
+       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/WA.png" alt="Logo">  <a href="https://wa.me/7771140441">(777) 114 0441</a></p>
         
         </div>
         <div class="datos">
-       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="Logo">San Marcos, Guerrero
-C.P. 39960</p>
+       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="Logo"><b class="especial"> Felipe Neri #9</b> <span>
+Col. Emiliano Zapata</span><span>
+Cuernavaca, Morelos</span></p>
         
         </div>
         <div class="datos">
-       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" alt="Logo">  <a href="mailto:contacto@sp2000.com.mx">contacto@sp2000.com.mx</a></p>
+       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" alt="Logo">  <a href="mailto:contacto@ecobol.com.mx">contacto@ecobol.com.mx</a></p>
         
         </div>
         
      
-       <p class="negritas">SÍGUENOS EN:</p>
+       <p class="negrita">SÍGUENOS EN:</p>
        <p><a href=""><img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/fb.png" alt="Logo">  </a><a href="#"><img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ig.png" alt="Logo">  </a><a href="#"><img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/yt.png" alt="Logo">  </a></p>
        
      </div>

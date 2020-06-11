@@ -4,7 +4,39 @@
     display: none;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+  a.woodmart-nav-link {
+    font-size: 16px!important;
+    color: black!important;
+  }
+  #slider h2 {
+    text-align: center!important;
+    font-size: 30px;
+  }
+  #slider h2.dos span {
+    font-size: 30px;
+  }
+  #slider h2 span {
+    font-size: 40px;
+  }
+  #slider p span {
+    display: inherit;
+  }
+  #slider a.btn {
+    text-align: center!important;
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px!important;
+    padding: 15px!important;
+    margin-left: 10px!important;
+    margin-right: 10px!important;
+  }
+  #slider span {
+    text-align: center!important;
+  }
+  #slider .center {
+    margin-top: -54px !important;
+  }
   /*LOGO*/
   /*   .whb-scroll-stick .woodmart-logo img {
     padding-top: 0;
@@ -72,6 +104,11 @@
   }
   #productos .gridbolsa {
     margin-bottom: 10px;
+  }
+  #contacto h2 span {
+    font-family: 'Gotham Black';
+    display: block;
+    font-size: 38px;
   }
   #contacto .cole1 {
     width: 100%;
@@ -145,5 +182,26 @@
     right: 168px;
     top: 46px;
     margin-top: -160px;
+  }
+  .fondoservicio2 {
+    background: url(../img/Footermovil.jpg) right bottom no-repeat;
+    background-size: auto;
+  }
+  #condiciones .ban {
+    padding: 70px 10px;
+  }
+  #condiciones h2 span {
+    font-family: 'Gotham Black';
+    display: block;
+    font-size: 40px;
+  }
+  #condiciones img.bolsa {
+    /* margin-right: 0px; */
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  #condiciones h3 {
+    font-size: 30px;
   }
 }

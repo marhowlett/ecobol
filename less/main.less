@@ -71,7 +71,7 @@
 }
 
 @font-face {
-    font-family: 'Gotham Condensed';
+    font-family: 'Gotham Condensed Bold';
     src: url('fonts/GothamCondensed-Bold.woff2') format('woff2'),
         url('fonts/GothamCondensed-Bold.woff') format('woff');
     font-weight: bold;
@@ -193,10 +193,7 @@
 
 
 /*Ajuste de FullWidth*/
-.row {
-    
-    display: inherit;
-}
+
 .page-template {
     .container {
         max-width: 100%;
@@ -206,9 +203,9 @@
 
 
    a.woodmart-nav-link {
-    font-family: 'Grenale Slab Norm'!important;
-    font-size: 16px!important;
-    color: #1b1b1b!important;
+    font-family: 'Gotham Condensed Bold'!important;
+    font-size: 20px!important;
+    color: white!important;
        
        
 }
@@ -245,6 +242,12 @@ ol {
     top: 3px;
     left: 7px;
 }
+}
+.whb-column.whb-col-right.whb-visible-lg {
+    background-color: #689d63;
+    /* padding-top: 25px; */
+    /* padding-bottom: 25px; */
+    padding: 25px 30px;
 }
 .template-section {
   
@@ -496,7 +499,7 @@ ol {
     background-size: cover;
    
 }
-.fondoservicio3{
+.fondoservicio4{
       background: url(../img/fondo4.jpg) bottom right no-repeat;
            
     background-size: cover;
@@ -547,6 +550,19 @@ ol {
     }
 }
 #contacto{
+    .datos{
+    span, p.negrita{
+        display: block;
+        position: relative;
+        left: 70px;
+        
+    }
+        b.especial {
+    font-weight: normal;
+    position: relative;
+    left: 10px;
+}
+    }
     .cole1{
         width: 30%;
         padding: 20px;
@@ -582,7 +598,7 @@ ol {
    font-family: 'Gotham Book Italic';
        
     }
-    input#fld_4405579_1 {
+   #fld_659548_1-wrap {
     position: relative;
     float: right;
 }
@@ -646,10 +662,14 @@ ol {
     text-align: center;
     }
 }
-body.home{
+body.home, body.page-template-nosotros, body.page-template-producto, body.page-template-servicio, body.page-template-condiciones {
     .nomostrar{
         display: none;
     }
+    .row {
+    
+    display: inherit;
+}
 }
 #esbrillante{
     padding: 20px 0;
@@ -829,7 +849,9 @@ body.home{
     }
 }
 #mision{
-   
+    p{
+        text-align: justify;
+    }
     p.negrita{
         margin-top: 30px;
         text-align: center;
@@ -840,7 +862,8 @@ body.home{
     width: 700px;
     border-top: none;
     border: 2px solid #dcdcdc;
-        
+        position: relative;
+    bottom: 72px;
     }
     img.bolsa{
         margin-right: 20px;
@@ -897,5 +920,34 @@ body.home{
     p.negrita {
     font-size: 16px;
 }
+}
+#slider{
+    padding: 0px;
+    h2{
+        line-height: 1.6em!important;
+        &.dos{
+            span {
+    font-size: 45px;
+}
+        }
+        span{
+                font-size: 80px;
+        }
+    }
+    .ban{
+        background: url(../img/fondo2.png) right bottom no-repeat;
+    background-size: contain;
+    }
+    p{
+        text-align: center!important;
+            margin-top: -30px;
+        span{
+             text-align: center!important;
+            display: block;
+        }
+    }
+    .center{
+        margin-top: -130px;
+    }
 }
 @import "responsive";

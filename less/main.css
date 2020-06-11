@@ -56,7 +56,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'Gotham Condensed';
+  font-family: 'Gotham Condensed Bold';
   src: url('fonts/GothamCondensed-Bold.woff2') format('woff2'), url('fonts/GothamCondensed-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
@@ -147,17 +147,14 @@
   padding-top: 0px;
 }
 /*Ajuste de FullWidth*/
-.row {
-  display: inherit;
-}
 .page-template .container {
   max-width: 100%;
   width: 100%;
 }
 a.woodmart-nav-link {
-  font-family: 'Grenale Slab Norm' !important;
-  font-size: 16px!important;
-  color: #1b1b1b!important;
+  font-family: 'Gotham Condensed Bold' !important;
+  font-size: 20px!important;
+  color: white!important;
 }
 /*Esquema por defecto para las secciones*/
 .grid {
@@ -185,6 +182,12 @@ ol {
   position: relative;
   top: 3px;
   left: 7px;
+}
+.whb-column.whb-col-right.whb-visible-lg {
+  background-color: #689d63;
+  /* padding-top: 25px; */
+  /* padding-bottom: 25px; */
+  padding: 25px 30px;
 }
 .template-section {
   padding: 50px 0;
@@ -376,7 +379,7 @@ ol {
   background: url(../img/fondo3.jpg) top center no-repeat;
   background-size: cover;
 }
-.fondoservicio3 {
+.fondoservicio4 {
   background: url(../img/fondo4.jpg) bottom right no-repeat;
   background-size: cover;
 }
@@ -417,6 +420,17 @@ ol {
 #elegir2 p.verde {
   font-size: 17px;
 }
+#contacto .datos span,
+#contacto .datos p.negrita {
+  display: block;
+  position: relative;
+  left: 70px;
+}
+#contacto .datos b.especial {
+  font-weight: normal;
+  position: relative;
+  left: 10px;
+}
 #contacto .cole1 {
   width: 30%;
   padding: 20px;
@@ -450,7 +464,7 @@ ol {
   font-size: 20px;
   font-family: 'Gotham Book Italic';
 }
-#contacto input#fld_4405579_1 {
+#contacto #fld_659548_1-wrap {
   position: relative;
   float: right;
 }
@@ -504,8 +518,19 @@ ol {
   margin: auto;
   text-align: center;
 }
-body.home .nomostrar {
+body.home .nomostrar,
+body.page-template-nosotros .nomostrar,
+body.page-template-producto .nomostrar,
+body.page-template-servicio .nomostrar,
+body.page-template-condiciones .nomostrar {
   display: none;
+}
+body.home .row,
+body.page-template-nosotros .row,
+body.page-template-producto .row,
+body.page-template-servicio .row,
+body.page-template-condiciones .row {
+  display: inherit;
 }
 #esbrillante {
   padding: 20px 0;
@@ -662,6 +687,9 @@ body.home .nomostrar {
 #nosotros1 .video {
   padding: 0px;
 }
+#mision p {
+  text-align: justify;
+}
 #mision p.negrita {
   margin-top: 30px;
   text-align: center;
@@ -672,6 +700,8 @@ body.home .nomostrar {
   width: 700px;
   border-top: none;
   border: 2px solid #dcdcdc;
+  position: relative;
+  bottom: 72px;
 }
 #mision img.bolsa {
   margin-right: 20px;
@@ -729,12 +759,71 @@ body.home .nomostrar {
 #condiciones p.negrita {
   font-size: 16px;
 }
+#slider {
+  padding: 0px;
+}
+#slider h2 {
+  line-height: 1.6em!important;
+}
+#slider h2.dos span {
+  font-size: 45px;
+}
+#slider h2 span {
+  font-size: 80px;
+}
+#slider .ban {
+  background: url(../img/fondo2.png) right bottom no-repeat;
+  background-size: contain;
+}
+#slider p {
+  text-align: center!important;
+  margin-top: -30px;
+}
+#slider p span {
+  text-align: center!important;
+  display: block;
+}
+#slider .center {
+  margin-top: -130px;
+}
 @media (max-width: 768px) {
   .offcanvas-sidebar-mobile .woodmart-sticky-sidebar-opener {
     display: none;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+  a.woodmart-nav-link {
+    font-size: 16px!important;
+    color: black!important;
+  }
+  #slider h2 {
+    text-align: center!important;
+    font-size: 30px;
+  }
+  #slider h2.dos span {
+    font-size: 30px;
+  }
+  #slider h2 span {
+    font-size: 40px;
+  }
+  #slider p span {
+    display: inherit;
+  }
+  #slider a.btn {
+    text-align: center!important;
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px!important;
+    padding: 15px!important;
+    margin-left: 10px!important;
+    margin-right: 10px!important;
+  }
+  #slider span {
+    text-align: center!important;
+  }
+  #slider .center {
+    margin-top: -54px !important;
+  }
   /*LOGO*/
   /*   .whb-scroll-stick .woodmart-logo img {
     padding-top: 0;
@@ -802,6 +891,11 @@ body.home .nomostrar {
   }
   #productos .gridbolsa {
     margin-bottom: 10px;
+  }
+  #contacto h2 span {
+    font-family: 'Gotham Black';
+    display: block;
+    font-size: 38px;
   }
   #contacto .cole1 {
     width: 100%;
@@ -875,5 +969,26 @@ body.home .nomostrar {
     right: 168px;
     top: 46px;
     margin-top: -160px;
+  }
+  .fondoservicio2 {
+    background: url(../img/Footermovil.jpg) right bottom no-repeat;
+    background-size: auto;
+  }
+  #condiciones .ban {
+    padding: 70px 10px;
+  }
+  #condiciones h2 span {
+    font-family: 'Gotham Black';
+    display: block;
+    font-size: 40px;
+  }
+  #condiciones img.bolsa {
+    /* margin-right: 0px; */
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  #condiciones h3 {
+    font-size: 30px;
   }
 }

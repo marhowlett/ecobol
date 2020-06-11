@@ -4,7 +4,7 @@
 ?>
 
 
-<div class="fondoservicio3">
+<div class="fondoservicio4">
    <section id="condiciones" class="template-section">
        <div class="contenedor">
        <div class="ban">
