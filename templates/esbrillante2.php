@@ -8,6 +8,6 @@
 </section>
  <section id="esbrillante" class="template-section">
  <div class="center">
- <a class="negritas" href="http://esbrillante.mx/">Sitio Web diseñado por EsBrillante</a>
+ <a class="negritas" href="http://esbrillante.mx/">Sitio Web diseñado por <span>EsBrillante</span></a>
  </div>
 </section>

@@ -25,7 +25,9 @@
 	<?php endif ?>
 	
 	<!-- FOOTER -->
-	<?php include("templates/esbrillante.php"); ?>
+	<footer >
+     <?php include("esbrillante2.php"); ?>
+</footer>
 <?php endif ?>
 </div> <!-- end wrapper -->
 <div class="woodmart-close-side"></div>

@@ -1,4 +1,5 @@
 //Remover los title de los a
+// Quick & dirty toggle to demonstrate modal toggle behavior
 
 window.onload = function () {
     var links = document.getElementsByTagName("a");
@@ -15,7 +16,6 @@ window.onload = function () {
 };
 
 // JavaScript
-/*
 window.sr = ScrollReveal({
     reset: false
 });
@@ -110,7 +110,7 @@ sr.reveal('.template-section h4', subtituloH4);
 sr.reveal('.template-section img, .template-section input', imagenes);
 sr.reveal('.template-section p, .template-section ul', contenido);
 sr.reveal('.template-section .btn', contenido);
-*/
+
 function addCommasToNum(num) {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 }
