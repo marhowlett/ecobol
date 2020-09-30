@@ -1,33 +1,19 @@
 <?php
-/**
- * The template for displaying the footer
- *
- */
+    /* Template Name: Catálogo */ 
+    get_header();
 ?>
-<?php if ( woodmart_needs_footer() ): ?>
-	<?php if ( ! woodmart_is_woo_ajax() ): ?>
-		</div><!-- .main-page-wrapper --> 
-	<?php endif ?>
-		</div> <!-- end row -->
-	</div> <!-- end container -->
-	<?php
-		$page_id = woodmart_page_ID();
-		$disable_prefooter = get_post_meta( $page_id, '_woodmart_prefooter_off', true );
-		$disable_footer_page = get_post_meta( $page_id, '_woodmart_footer_off', true );
-		$disable_copyrights_page = get_post_meta( $page_id, '_woodmart_copyrights_off', true );
-	?>
-	<?php if ( ! $disable_prefooter && woodmart_get_opt( 'prefooter_area' ) ): ?>
-		<div class="woodmart-prefooter">
-			<div class="container">
-				<?php echo do_shortcode( woodmart_get_opt( 'prefooter_area' ) ); ?>
-			</div>
-		</div>
-	<?php endif ?>
-	
-	<!-- FOOTER -->
-	<footer >
-     <?php include("esbrillante2.php"); ?>
-     <section id="contacto" class="template-section tiendafooter">
+<section id="servicios2" class="template-section">
+<div class="contenedor">
+<div class="ban">
+<h2 >CATÁLOGO</h2>
+</div>
+
+</div>
+</section>
+<section id="cat" class="template-section">
+    <div class="contenedor"><?php echo do_shortcode('[woodmart_products layout="carousel" spacing="20" slides_per_view="4" autoplay="no" hide_pagination_control="no" hide_prev_next_buttons="no" center_mode="no" wrap="no" sale_countdown="0" stock_progress_bar="0" highlighted_products="0" products_bordered_grid="0" lazy_loading="no" scroll_carousel_init="no"]'); ?></div>
+</section>
+<section id="contacto" class="template-section">
 
 <div class="contenedor">
    
@@ -79,10 +65,8 @@ Cuernavaca, Morelos</span></p>
            </div>
 </div>
 </section>
-</footer>
-<?php endif ?>
-</div> <!-- end wrapper -->
-<div class="woodmart-close-side"></div>
-<?php wp_footer(); ?>
-</body>
-</html>
+<?php 
+    get_footer();
+?>
+
+

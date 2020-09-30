@@ -7,10 +7,14 @@
 </section>
 <section id="somos" class="template-section">
        <div class="contenedor">
-      
+             <div class="grid">
+              <div class="col">
+                  <?php echo do_shortcode('[video width="1920" height="1080" mp4="https://ecobol.mx/wp-content/uploads/2020/09/Ecobol-comprimido.mp4"][/video]'); ?>
+              </div>
            <div class="col"><img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Logo">
            <p>Una empresa sustentable, especializada en la fabricación y comercialización de bolsas publicitarias de tela y papel Kraft, también fabricamos cajas, para dar una solución integral al problema de los empaques, disminuyendo el impacto ambiental, sin arriesgar la calidad. 
  </p>
+           </div>
            </div>
           
     </div>
@@ -25,7 +29,7 @@
     <p>Bolsas <span class="espe">•</span> Morrales <span class="espe">•</span> Costales <span class="espe">•</span> Fundas <span class="espe">•</span> Backpack</p>
 <div class="grid">
     <div class="col2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/manta.png" alt="Logo"><p>MANTA</p></div>
-    <div class="col2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/natural.png" alt="Logo"><p>YUTE NATURAL</p></div>
+    <div class="col2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nat.png" alt="Logo"><p>YUTE NATURAL</p></div>
     <div class="col2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/algodón.png" alt="Logo"><p>YUTE ALGODÓN</p></div>
 </div>
 
@@ -47,7 +51,7 @@
     <div class="col"> <p><span class="espe">•</span> Cajas  <span class="espe">•</span> </p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bolsa2.jpg" alt="Logo"></div>
     </div>
 <div class="center">
-<a href="#"  class="btn"> <span>VER CATÁLOGO COMPLETO</span></a>
+<a href="https://ecobol.mx/catalogo"  class="btn"> <span>VER CATÁLOGO COMPLETO</span></a>
 </div>
 </div>
 
@@ -81,7 +85,7 @@ PUBLICITARIO</span></h2>
         <div class="col3"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/calidad.png" alt="calidad"><p>Calidad con un menor impacto ambiental</p></div>
         <div class="col3"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/atencion.png" alt="atencion"><p>Capacidad para atender grandes clientes</p></div>
         <div class="col3"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/marca.png" alt="marca"><br><p>Estampado para posicionar su marca</p></div>
-        <div class="col3"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/producción.png" alt="producción"><p>Asesoría, diseño y 
+        <div class="col3 ban2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/producción.png" alt="producción"><p>Asesoría, diseño y 
 fabricación de
 empaques </p></div>
     </div>
@@ -91,10 +95,10 @@ empaques </p></div>
 <section id="contacto" class="template-section">
 
 <div class="contenedor">
-   <div class="ban">
+   
 <h2>
 <span>¡CONTÁCTANOS!</span></h2>
-    </div>
+    
     <div class="grid">
         <div class="col espe"><img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/contacto.png" alt="Logo"></div>
         <div class="col"><p>En Ecobol nos esforzamos por ofrecerle bolsas y cajas de altísima calidad, para empacar su producto, sin perjudicar el medio ambiente.</p></div>
@@ -134,7 +138,7 @@ Cuernavaca, Morelos</span></p>
         
      
        <p class="negrita">SÍGUENOS EN:</p>
-       <p><a href=""><img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/fb.png" alt="Logo">  </a><a href="#"><img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ig.png" alt="Logo">  </a><a href="#"><img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/yt.png" alt="Logo">  </a></p>
+       <p><a href="https://web.facebook.com/ventas.bolsas.5?_rdc=1&_rdr"><img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/fb.png" alt="Logo">  </a><a href="#"><img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ig.png" alt="Logo">  </a><a href="#"><img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/yt.png" alt="Logo">  </a><a href="https://pin.it/4KXvPse"><img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pt.png" alt="Logo">  </a></p>
        
      </div>
            </div>

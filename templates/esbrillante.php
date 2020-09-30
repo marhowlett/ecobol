@@ -3,7 +3,7 @@
 <div class="contenedor">
     <div class="grid">
         <div class="col colespe"><a class="espe" href="https://ecobol.mx/condiciones/">Términos y Condiciones</a> </div>
-        <div class="col"><a href="">Formulario de derecho de disentimiento</a></div>
+        <div class="col"><a href="https://ecobol.mx/formulario/">Formulario de derecho de disentimiento</a></div>
     </div>
 </div>
 </section>

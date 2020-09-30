@@ -27,12 +27,37 @@
   font-style: normal;
   font-display: swap;
 }
+.tiendafooter {
+  display: none;
+}
+body.single-product .tiendafooter {
+  display: inherit;
+}
 /* Ajustes generales de la plantilla */
 .whb-scroll-stick .woodmart-logo img {
   transform: scale(1) translateY(0px);
 }
 .main-page-wrapper {
   padding-top: 0px;
+}
+.product-image-summary .summary-inner > .price,
+.product-image-summary .woodmart-scroll-content > .price {
+  display: none;
+}
+span.woocommerce-Price-amount.amount {
+  display: none;
+}
+.swap-wrapp {
+  display: none;
+}
+.single_variation_wrap {
+  display: none;
+}
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
+  display: none;
+}
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+  display: none;
 }
 /*Ajuste de FullWidth*/
 .page-template .container {
@@ -44,7 +69,7 @@ a.woodmart-nav-link {
   font-size: 18px!important;
   color: #53626d!important;
 }
-#menu-item-18:nth-child(1) a.woodmart-nav-link {
+#menu-item-84:nth-child(1) a.woodmart-nav-link {
   color: #629f68 !important;
   font-family: 'Poppins Bold' !important;
 }
@@ -62,6 +87,13 @@ a.woodmart-nav-link {
   background-color: #ffffff;
 }
 /*Esquema por defecto para las secciones*/
+#cat p,
+#cat a,
+#cat img,
+#cat h3 {
+  opacity: inherit!important;
+  transform: initial!important;
+}
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -75,8 +107,17 @@ a.woodmart-nav-link {
 .grid .col3 {
   width: 25%;
 }
+.woodmart-buttons.wd-pos-r-t {
+  display: none;
+}
 .product-tabs-wrapper {
   display: none;
+}
+.cel {
+  display: none;
+}
+.lap {
+  display: inherit;
 }
 /*Ajuste general*/
 ol {
@@ -131,6 +172,7 @@ ol {
 .template-section h2 span {
   color: #52626b;
   font-family: 'Chinese Rocks Rg';
+  font-weight: normal;
   display: block;
   font-size: 60px;
 }
@@ -139,6 +181,7 @@ ol {
 }
 .template-section h2.verde span {
   font-family: 'Chinese Rocks Rg';
+  font-weight: normal;
   color: #52626b;
   display: block;
   font-size: 45px;
@@ -147,6 +190,7 @@ ol {
 .template-section h2.blanco {
   color: white;
   font-family: 'Chinese Rocks Rg';
+  font-weight: normal;
 }
 .template-section h3 {
   color: #629f68;
@@ -194,18 +238,19 @@ ol {
   color: #629f68;
 }
 .template-section strong {
+  font-family: 'Poppins Bold';
   font-weight: bold;
   color: #629f68;
 }
 .template-section ul li {
   color: #52626b;
-  font-family: 'Gotham';
+  font-family: 'Poppins Regular';
   position: relative;
   margin-left: 15px;
   margin-bottom: 10px;
 }
 .template-section ul li::before {
-  content: "•";
+  content: "●";
   color: #629f68;
   font-weight: bold;
   display: inline-block;
@@ -228,6 +273,7 @@ ol {
 .template-section .btn {
   transition: all 0.3s ease-in-out;
   font-family: 'Chinese Rocks Rg';
+  font-weight: normal;
   text-transform: none;
   font-size: 28px;
   border-radius: 0px;
@@ -288,7 +334,7 @@ ol {
   background-size: cover;
 }
 #somos p {
-  width: 500px;
+  max-width: 500px;
   text-align: justify;
   display: block;
   margin: auto;
@@ -358,6 +404,42 @@ ol {
 #estampado p {
   text-align: justify;
 }
+#estampado2 {
+  padding: inherit;
+  background: url(../img/estampado2.jpg) left center no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+#estampado2 h2 {
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.4em;
+}
+#estampado2 .especial {
+  position: relative;
+  left: 50px;
+}
+#estampado2 p {
+  text-align: justify;
+}
+#estampado3 {
+  background: url(../img/estampado3.jpg) center no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+#estampado3 h2 {
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.4em;
+}
+#estampado3 .especial {
+  top: 130px;
+  position: relative;
+  left: 50px;
+}
+#estampado3 p {
+  text-align: justify;
+}
 #elegir2 {
   background: url(../img/elegir.jpg) center no-repeat;
   background-size: cover;
@@ -372,6 +454,9 @@ ol {
 #elegir2 .col3 {
   border-right: 2px solid white;
   padding: 20px;
+}
+#elegir2 .ban2 {
+  border-right: none;
 }
 #elegir2 img {
   display: block;
@@ -391,7 +476,7 @@ ol {
 #contacto .datos span {
   display: block;
   position: relative;
-  left: 70px;
+  left: 62px;
 }
 #contacto .datos b.especial {
   font-weight: normal;
@@ -491,14 +576,18 @@ body.home .nomostrar,
 body.page-template-nosotros .nomostrar,
 body.page-template-producto .nomostrar,
 body.page-template-servicio .nomostrar,
-body.page-template-condiciones .nomostrar {
+body.page-template-condiciones .nomostrar,
+body.page-template-catalogo .nomostrar,
+body.page-template-terminos .nomostrar {
   display: none;
 }
 body.home .row,
 body.page-template-nosotros .row,
 body.page-template-producto .row,
 body.page-template-servicio .row,
-body.page-template-condiciones .row {
+body.page-template-condiciones .row,
+body.page-template-catalogo .row,
+body.page-template-terminos .row {
   display: inherit;
 }
 #esbrillante {
@@ -533,23 +622,20 @@ body.page-template-condiciones .row {
 #servicios p {
   text-align: justify;
 }
+#servicios .colespe {
+  padding: 0px;
+}
 #servicios2 {
-  background-color: rgba(244, 248, 244, 0.5);
+  background: url(../img/servicios.jpg) center no-repeat;
 }
-#servicios2 .ban2 {
-  background: url(../img/ban5.png) center no-repeat;
-  padding: 15px;
-  background-size: auto;
-}
-#servicios2 h2 {
-  text-align: right;
-}
+#servicios2 h2,
 #servicios2 p {
-  text-align: justify;
+  text-align: center;
+  color: white;
 }
 #funciona {
-  padding: 0px;
-  padding-top: 20px;
+  padding-top: 100px;
+  background: url(../img/forma.jpg) center no-repeat;
 }
 #funciona img.funciona {
   display: block;
@@ -563,12 +649,30 @@ body.page-template-condiciones .row {
   text-align: center;
   margin-top: -20px;
 }
-#funciona2 {
-  padding: 0px;
+#funciona p.fun {
+  color: #629f68;
+}
+#funciona p.negrita {
+  margin-top: 20px;
+}
+#funciona h3 {
+  color: #52626b;
+}
+#funciona ol {
+  line-height: 1;
 }
 /**PRODUCTOS**/
-#productos2 {
-  padding-top: 0px;
+#preocupamos {
+  background: url(../img/preocupamos.jpg) bottom center no-repeat;
+}
+#preocupamos p.ecobol {
+  text-align: center;
+  display: block;
+  margin: auto;
+  max-width: 900px;
+}
+#productos2.beneficios {
+  background: url(../img/beneficios.png) right center no-repeat;
 }
 #productos2 h2.blanco {
   text-align: center;
@@ -582,6 +686,9 @@ body.page-template-condiciones .row {
 #productos2 img.bproducto {
   position: relative;
   left: 100px;
+}
+#productos2 .fondo1 {
+  padding: inherit;
 }
 #productos2 .ban {
   background: url(../img/productos.jpg) center no-repeat;
@@ -602,11 +709,11 @@ body.page-template-condiciones .row {
 #productos2 p {
   text-align: justify;
 }
-#productos2 p.ecobol {
-  text-align: center;
-  display: block;
-  margin: auto;
-  max-width: 900px;
+#productos2 ul b,
+#productos2 p b {
+  color: #629f68;
+  text-decoration: underline;
+  font-family: 'Poppins Bold';
 }
 #productos2 p.negrita.ecobol {
   position: relative;
@@ -627,6 +734,18 @@ body.page-template-condiciones .row {
   margin: auto;
   margin-top: 30px;
 }
+#encuentra p {
+  text-align: center;
+  max-width: 900px;
+  margin: 30px auto;
+}
+#encuentra p.detalles {
+  font-family: 'Poppins Bold';
+  font-size: 25px;
+}
+#encuentra h3 {
+  text-align: center;
+}
 #modelo img {
   display: block;
   margin: auto;
@@ -645,18 +764,27 @@ body.page-template-condiciones .row {
   text-align: center;
 }
 #tecondi .ban {
-  background-color: #d6e4d5;
+  background-color: #689d63;
 }
 #tecondi .ban h3 {
+  color: white;
+  font-family: 'Poppins Regular';
   text-align: center;
-  font-size: 30px;
+  font-size: 29px;
   padding: 15px;
+}
+#tecondi .ban h3 strong {
+  font-size: 30px;
+  color: #e4f1e7;
 }
 #nosotros1 p {
   text-align: justify;
 }
 #nosotros1 .video {
   padding: 0px;
+}
+#mision {
+  background: url(../img/mision.jpg) top center no-repeat;
 }
 #mision p {
   text-align: justify;
@@ -665,24 +793,20 @@ body.page-template-condiciones .row {
   margin-top: 30px;
   text-align: center;
 }
-#mision hr {
-  margin-top: 0;
-  margin-bottom: 20px;
-  width: 700px;
-  border-top: none;
-  border: 2px solid #dcdcdc;
-  position: relative;
-  bottom: 72px;
-}
-#mision img.bolsa {
-  margin-right: 20px;
+#mision h2 {
+  font-size: 60px;
+  font-family: 'Chinese Rocks Rg';
 }
 #valores {
-  background-color: rgba(104, 157, 99, 0.5);
-  margin-bottom: 50px;
+  background: url(../img/elegir.jpg) top center no-repeat;
+  padding: 100px;
 }
 #valores h2 {
+  color: white;
   margin-bottom: 50px;
+}
+#valores h2 span {
+  color: white;
 }
 #valores img {
   display: block;
@@ -690,13 +814,22 @@ body.page-template-condiciones .row {
   margin-bottom: 20px;
 }
 #valores p {
+  color: white;
   text-align: center;
+}
+#valores .col3 {
+  border-right: 2px solid white;
+}
+#valores .ban {
+  border-right: none;
 }
 #relleno {
   padding: 90px 0;
 }
 #condiciones {
-  padding-top: 0px;
+  background: url(../img/fondometodos.png) top center no-repeat;
+  background-size: contain;
+  padding: 100px 0;
 }
 #condiciones .ban {
   background: url(../img/envio.jpg) center no-repeat;
@@ -708,6 +841,14 @@ body.page-template-condiciones .row {
 }
 #condiciones img.bolsa {
   margin-right: 20px;
+}
+#condiciones img.espe {
+  position: relative;
+  top: -10px;
+}
+#condiciones img.espe2 {
+  position: relative;
+  top: -5px;
 }
 #condiciones h2.blanco {
   text-align: center;
@@ -727,8 +868,22 @@ body.page-template-condiciones .row {
 #condiciones .especial {
   padding: 0px;
 }
-#condiciones p.negrita {
+#condiciones p.negritas {
   font-size: 16px;
+  font-family: 'Poppins Bold';
+  color: #629f68;
+}
+#procesos {
+  background: url(../img/proceso.png) top center no-repeat;
+}
+#procesos p {
+  text-align: center;
+  color: #629f68;
+  font-weight: bold;
+}
+#procesos .contenedor {
+  margin-top: 50px;
+  max-width: 900px;
 }
 @media (max-width: 768px) {
   .offcanvas-sidebar-mobile .woodmart-sticky-sidebar-opener {
@@ -736,37 +891,18 @@ body.page-template-condiciones .row {
   }
 }
 @media screen and (max-width: 768px) {
+  .offcanvas-sidebar-mobile .woodmart-sticky-sidebar-opener:not(.sticky-toolbar) {
+    display: none!important;
+  }
   a.woodmart-nav-link {
     font-size: 16px!important;
     color: black!important;
   }
-  #slider h2 {
-    text-align: center!important;
-    font-size: 30px;
+  .lap {
+    display: none!important;
   }
-  #slider h2.dos span {
-    font-size: 30px;
-  }
-  #slider h2 span {
-    font-size: 40px;
-  }
-  #slider p span {
-    display: inherit;
-  }
-  #slider a.btn {
-    text-align: center!important;
-    margin: 0 auto;
-    display: block;
-    margin-top: 25px!important;
-    padding: 15px!important;
-    margin-left: 10px!important;
-    margin-right: 10px!important;
-  }
-  #slider span {
-    text-align: center!important;
-  }
-  #slider .center {
-    margin-top: -54px !important;
+  .cel {
+    display: inherit!important;
   }
   /*LOGO*/
   /*   .whb-scroll-stick .woodmart-logo img {
@@ -814,6 +950,9 @@ body.page-template-condiciones .row {
     font-size: 40px;
     line-height: 1em;
   }
+  .template-section h2 span {
+    font-size: 50px;
+  }
   .template-section h3 {
     font-size: 30px;
   }
@@ -823,9 +962,21 @@ body.page-template-condiciones .row {
     text-align: center;
   }
   .template-section p,
-  .template-section u,
+  .template-section ul,
   .template-section a {
     font-size: 15px;
+  }
+  #productos {
+    background: url(../img/fondo.jpg) top center repeat;
+    height: auto;
+  }
+  #productos .espe1 {
+    position: relative;
+    left: 0px;
+  }
+  #productos .espe2 {
+    position: relative;
+    right: 0px;
   }
   #productos img.bolsa {
     display: block;
@@ -836,10 +987,10 @@ body.page-template-condiciones .row {
   #productos .gridbolsa {
     margin-bottom: 10px;
   }
-  #contacto h2 span {
-    font-family: 'Gotham Black';
+  #contacto .datos span {
     display: block;
-    font-size: 38px;
+    position: relative;
+    left: 60px;
   }
   #contacto .cole1 {
     width: 100%;
@@ -882,31 +1033,15 @@ body.page-template-condiciones .row {
   #servicios h2.espe span {
     font-size: 38px;
   }
-  #funciona {
-    padding: 0px;
-    padding-top: 0px;
-  }
-  #funciona img.funciona {
-    display: block;
-    margin: auto;
-    position: relative;
-    right: 153px;
-    top: 58px;
-    margin-top: -133px;
-  }
-  #funciona h2 span {
-    font-size: 40px;
-  }
-  #funciona .fondoservicio2 {
-    background: url(../img/footermovil.jpg) right bottom no-repeat;
-    background-size: auto;
+  #productos2 .ban2 {
+    margin-bottom: 0px;
   }
   #productos2 .ban {
     padding: 70px 20px;
   }
   #productos2 img.bproducto {
     position: relative;
-    left: 80px;
+    left: 25px;
   }
   #modelo img.funciona {
     position: relative;
@@ -934,5 +1069,83 @@ body.page-template-condiciones .row {
   }
   #condiciones h3 {
     font-size: 30px;
+  }
+  #estampado {
+    background: url(../img/estampadores.jpg) left center no-repeat;
+    background-size: cover;
+    height: 930px;
+  }
+  #estampado .especial {
+    position: relative;
+    left: 0px;
+  }
+  #elegir2 .grid {
+    display: flex;
+  }
+  #elegir2 .col3 {
+    border-right: none;
+    padding: 20px;
+    width: 50%;
+  }
+  #servicios .colespe {
+    padding: 0px;
+    position: relative;
+    left: 45px;
+  }
+  #procesos .contenedor {
+    padding: 20px;
+  }
+  #valores {
+    padding: 50px 0;
+  }
+  #valores .grid {
+    display: flex;
+  }
+  #valores .col3 {
+    width: 50%;
+    border-right: none;
+  }
+  #productos2 ul {
+    text-align: left;
+  }
+  #estampado3 {
+    background: url(../img/estampadores3.jpg) center no-repeat;
+    background-size: cover;
+    height: 930px;
+  }
+  #estampado3 .especial {
+    top: 10px;
+    position: relative;
+    left: 0px;
+  }
+  #estampado3 h2 {
+    font-size: 19px;
+  }
+  #estampado3 h2.verde span {
+    font-size: 35px;
+  }
+  #tecondi {
+    padding: inherit;
+    margin-bottom: -21px;
+  }
+  #encuentra .contenedor {
+    padding: 20px;
+  }
+  #servicios img {
+    position: relative;
+    right: 73px;
+  }
+  #estampado2 {
+    background: url(../img/estampado2res.jpg) left center no-repeat;
+    background-size: cover;
+    height: 930px;
+  }
+  #estampado2 h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  #estampado2 .especial {
+    position: relative;
+    left: 0px;
   }
 }

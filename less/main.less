@@ -33,7 +33,14 @@
     font-style: normal;
     font-display: swap;
 }
-
+.tiendafooter{
+    display: none;
+}
+body.single-product{
+    .tiendafooter{
+        display: inherit;
+    }
+}
 
 
 /* Ajustes generales de la plantilla */
@@ -46,7 +53,25 @@
 }
 @import "vars";
 
-
+.product-image-summary .summary-inner>.price, .product-image-summary .woodmart-scroll-content>.price {
+   
+    display: none;
+}
+span.woocommerce-Price-amount.amount {
+    display: none;
+}
+.swap-wrapp {
+    display: none;
+}
+.single_variation_wrap {
+    display: none;
+}
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
+    display: none;
+}
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+    display: none;
+}
 
 /*Ajuste de FullWidth*/
 
@@ -65,7 +90,7 @@
        
        
 }
-#menu-item-18:nth-child(1) {
+#menu-item-84:nth-child(1) {
     a.woodmart-nav-link {
     color: @verde!important;
     font-family: 'Poppins Bold'!important;
@@ -82,7 +107,12 @@
 .icons-design-simple.color-scheme-light .woodmart-social-icon{background-color:rgba(255,255,255,1);
 }
 /*Esquema por defecto para las secciones*/
-
+#cat{
+    p,a,img,h3{
+        opacity: inherit!important;
+            transform: initial!important;
+    }
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -96,10 +126,18 @@
             width: 25%;
     }
 }
+.woodmart-buttons.wd-pos-r-t {
+    display: none;
+}
 .product-tabs-wrapper {
     display: none;
 }
-
+.cel{
+        display: none;
+    }
+    .lap{
+        display: inherit;
+    }
 
 /*Ajuste general*/
 ol {
@@ -168,6 +206,7 @@ ol {
         span{
              color: @gris;
             font-family: 'Chinese Rocks Rg';
+            font-weight: normal;
           display: block;
             font-size: 60px;
              
@@ -177,6 +216,7 @@ ol {
             color: @verde;
                 span{
                     font-family: 'Chinese Rocks Rg';
+                     font-weight: normal;
                     color: @gris;
             display: block;
              font-size: 45px;
@@ -186,6 +226,7 @@ ol {
         &.blanco{
            color: white;
             font-family: 'Chinese Rocks Rg';
+             font-weight: normal;
         }
      
 
@@ -226,6 +267,7 @@ font-family: 'Gotham';
         }
         }
     strong{
+        font-family: 'Poppins Bold';
         font-weight: bold;
          color: @verde;
     }
@@ -237,13 +279,13 @@ font-family: 'Gotham';
            
             color: @gris;
              
-          font-family: 'Gotham';
+         font-family: 'Poppins Regular';
             position: relative;
             margin-left: 15px;
             margin-bottom: 10px;
             &::before {
                
-  content: "•";
+  content: "●";
   color: @verde;
   font-weight: bold;
   display: inline-block; 
@@ -289,6 +331,7 @@ font-family: 'Gotham';
      //    text-shadow: -2px 2px rgba(0,0,0,0.3);
         transition: all 0.3s ease-in-out;
          font-family: 'Chinese Rocks Rg';
+         font-weight: normal;
             text-transform: none;
              font-size: 28px;
      //    -webkit-border-radius: 10px;
@@ -361,7 +404,7 @@ font-family: 'Gotham';
     background: url(../img/somos.jpg) center no-repeat;
     background-size: cover;
         p{
-             width: 500px;
+             max-width: 500px;
             text-align: justify;
                 display: block;
     margin: auto;
@@ -447,6 +490,47 @@ font-family: 'Gotham';
     
 }
 
+#estampado2{
+        padding: inherit;
+     background: url(../img/estampado2.jpg) left center no-repeat;
+    background-size: cover;
+        height: 800px;
+    h2{
+        text-align: center;
+        font-size: 34px;
+    line-height: 1.4em;
+    }
+    .especial{
+       
+            position: relative;
+    left: 50px;
+}
+    
+    p{
+        text-align: justify;
+    }
+    
+}
+#estampado3{
+     background: url(../img/estampado3.jpg)  center no-repeat;
+    background-size: cover;
+        height: 800px;
+    h2{
+        text-align: center;
+       font-size: 26px;
+    line-height: 1.4em;
+    }
+    .especial{
+           top: 130px;
+            position: relative;
+    left: 50px;
+}
+    
+    p{
+        text-align: justify;
+    }
+    
+}
 
 #elegir2{
      background: url(../img/elegir.jpg) center no-repeat;
@@ -465,6 +549,11 @@ font-family: 'Gotham';
     .ban{
     //    background-color: white;
       //   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    .ban2{
+        
+        border-right: none;
+    
     }
     img{
         display: block;
@@ -485,7 +574,7 @@ font-family: 'Gotham';
     span,{
         display: block;
         position: relative;
-        left: 70px;
+            left: 62px;
         
     }
         b.especial {
@@ -599,7 +688,7 @@ font-family: 'Gotham';
     text-align: center;
     }
 }
-body.home, body.page-template-nosotros, body.page-template-producto, body.page-template-servicio, body.page-template-condiciones {
+body.home, body.page-template-nosotros, body.page-template-producto, body.page-template-servicio, body.page-template-condiciones, body.page-template-catalogo, body.page-template-terminos {
     .nomostrar{
         display: none;
     }
@@ -641,26 +730,27 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
     p{
         text-align: justify;
     }
+    .colespe{
+            padding: 0px;
+    }
 }
 
 #servicios2{
-   background-color:rgba(244,248,244,0.5);
-    .ban2{
-         background: url(../img/ban5.png) center no-repeat;
-          padding: 15px;
-            background-size: auto;
-    }
-    h2{
-        text-align: right;
+    background: url(../img/servicios.jpg) center no-repeat;
+    
+    h2,p{
+        text-align: center;
+        color: white;
     }
     
-    p{
-        text-align: justify;
-    }
+    
+    
 }
 #funciona{
-    padding: 0px;
-        padding-top: 20px;
+        padding-top: 100px;
+    background: url(../img/forma.jpg) center no-repeat;
+    
+
     img.funciona{
        display: block;
     margin: auto;
@@ -672,13 +762,36 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
     p{
         text-align: center;
            margin-top: -20px;
+        &.fun{
+            color: @verde;
+        }
+        &.negrita {
+    margin-top: 20px;
+}
+    }
+    h3{
+        color: @gris;
+    }
+    ol{
+        line-height: 1;
     }
 }
-#funciona2{
-   padding: 0px; 
-}
+
 /**PRODUCTOS**/
+#preocupamos{
+      background: url(../img/preocupamos.jpg) bottom center no-repeat;
+        p.ecobol{
+        text-align: center;
+            text-align: center;
+    display: block;
+    margin: auto;
+    max-width: 900px;
+    }
+}
 #productos2{
+    &.beneficios{
+         background: url(../img/beneficios.png) right center no-repeat;
+    }
     h2.blanco{
         text-align: center;
     }
@@ -686,13 +799,17 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
         text-align: center;
     }
     
-    padding-top: 0px;
+    
     ol{
         text-align: justify;
     }
     img.bproducto{
             position: relative;
     left: 100px;
+    }
+    .fondo1{
+        padding: inherit;
+        
     }
     .ban{
          background: url(../img/productos.jpg) center no-repeat;
@@ -712,14 +829,14 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
   
     ul,p{
         text-align: justify;
+        b{
+           
+                color: @verde;
+                text-decoration: underline;
+            font-family: 'Poppins Bold';
+            }
     }
-    p.ecobol{
-        text-align: center;
-            text-align: center;
-    display: block;
-    margin: auto;
-    max-width: 900px;
-    }
+
    p.negrita.ecobol {
     position: relative;
     top: 25px;
@@ -741,6 +858,20 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
     margin-top: 30px;
             
         }
+    }
+}
+#encuentra{
+    p{
+        text-align: center;
+        max-width: 900px;
+            margin: 30px auto;
+        &.detalles{
+            font-family: 'Poppins Bold';
+            font-size: 25px;
+        }
+    }
+    h3{
+        text-align: center;
     }
 }
 #modelo{
@@ -767,11 +898,17 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
 }
 #tecondi{
     .ban{
-        background-color: @fondoverde2;
+        background-color: @fondoverde3;
         h3{
+            color: white;
+            font-family: 'Poppins Regular';
             text-align: center;
-                font-size: 30px;
+                font-size: 29px;
             padding: 15px;
+            strong{
+                font-size: 30px;
+                color: #e4f1e7;
+            }
         }
     }
 }
@@ -787,6 +924,7 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
     }
 }
 #mision{
+     background: url(../img/mision.jpg) top center no-repeat;
     p{
         text-align: justify;
     }
@@ -794,32 +932,39 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
         margin-top: 30px;
         text-align: center;
     }
-    hr{
-        margin-top: 0;
-    margin-bottom: 20px;
-    width: 700px;
-    border-top: none;
-    border: 2px solid #dcdcdc;
-        position: relative;
-    bottom: 72px;
+    h2{
+         font-size: 60px;
+         font-family: 'Chinese Rocks Rg';
+        
     }
-    img.bolsa{
-        margin-right: 20px;
-    }
+   
+ 
 }
 #valores{
-      background-color:rgba(104,157,99,0.5);
-    margin-bottom: 50px;
+      background: url(../img/elegir.jpg) top center no-repeat;
+   padding: 100px;
     h2{
+        color: white;
         margin-bottom: 50px;
+        span{
+            color: white;
+        }
     }
+    
     img{
         display: block;
         margin: auto;
         margin-bottom: 20px;
     }
     p{
+        color: white;
         text-align: center;
+    }
+    .col3{
+            border-right: 2px solid white;
+    }
+    .ban{
+        border-right: none;
     }
 }
 #relleno{
@@ -827,7 +972,9 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
 }
 
 #condiciones{
-    padding-top: 0px;
+     background: url(../img/fondometodos.png) top center no-repeat;
+       background-size: contain;
+    padding: 100px 0;
     .ban{
          background: url(../img/envio.jpg) center no-repeat;
         background-size: cover;
@@ -838,6 +985,14 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
     }
     img.bolsa{
         margin-right: 20px;
+    }
+    img.espe{
+        position: relative;
+        top: -10px;
+    }
+    img.espe2{
+        position: relative;
+        top: -5px;
     }
     h2.blanco{
         text-align: center;
@@ -855,9 +1010,23 @@ body.home, body.page-template-nosotros, body.page-template-producto, body.page-t
     .especial{
         padding: 0px;
     }
-    p.negrita {
+    p.negritas {
     font-size: 16px;
+        font-family: 'Poppins Bold';
+        color: @verde;
 }
+}
+#procesos{
+    background: url(../img/proceso.png) top center no-repeat;
+    p{
+        text-align: center;
+        color: @verde;
+        font-weight: bold;
+    }
+    .contenedor{
+            margin-top: 50px;
+            max-width: 900px;
+    }
 }
 
 @import "responsive";
