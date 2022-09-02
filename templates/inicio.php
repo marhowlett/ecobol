@@ -72,7 +72,7 @@ PUBLICITARIO</span></h2>
   </div>
    </div>
    </div>
-    </section>
+</section>
 
 <section id="elegir2" class="template-section">
 <div class="ban">
@@ -105,9 +105,10 @@ empaques </p></div>
     </div>
      
            <div class="grid">
-               <div class="col"><?php echo do_shortcode('[caldera_form id="CF5e14ef6d8486d"]'); ?></div>
+               <div class="col"><?php echo do_shortcode('[wpforms id="177" title="false"]'); ?></div>
                
 <div class="col datos">
+      
        
      
        <div class="datos">
@@ -126,13 +127,14 @@ EXT. 101</span>
         
         </div>
         <div class="datos">
-       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="Logo"><b class="especial"> Felipe Neri #9</b> <span>
-Col. Emiliano Zapata</span><span>
+       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="Logo"><b class="especial"> Calle Geranio #54</b> <span>
+Colonia Satélite</span>
+<span>C.p. 62460</span><span>
 Cuernavaca, Morelos</span></p>
         
         </div>
         <div class="datos">
-       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" alt="Logo">  <a href="mailto:contacto@ecobol.com.mx">contacto@ecobol.com.mx</a></p>
+       <p class="bl2"> <img class="so" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" alt="Logo">  <a href="mailto:ventas@ecobol.mx">ventas@ecobol.mx</a></p>
         
         </div>
         
