@@ -40,7 +40,7 @@
     </div>
      
            <div class="grid">
-               <div class="col"><?php echo do_shortcode('[caldera_form id="CF5e14ef6d8486d"]'); ?></div>
+               <div class="col"><?php echo do_shortcode('[wpforms id="177" title="false"]'); ?></div>
                
 <div class="col datos">
        

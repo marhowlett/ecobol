@@ -9,7 +9,8 @@
 </section>
  <section id="esbrillante" class="template-section">
  <div class="center">
- <a class="negritas" href="http://esbrillante.mx/">Sitio Web diseñado por EsBrillante</a>
+    
+<a class="negritas" href="https://esbrillante.mx/diseno-paginas-web-cuernavaca-morelos/" title="Diseño de sitios Web en Cuernavaca" target="_blank">Diseño Web Cuernavaca</a>
  </div>
 </section>
 </div>
